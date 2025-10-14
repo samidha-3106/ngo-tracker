@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NGO Dashboard</title>
+</head>
+<body>
+    <h1>NGO Dashboard</h1>
+    <a href="{% url 'add_project' %}">Add New Project</a>
+    <hr>
+    <ul>
+        {% for project in projects %}
+            <li>
+                <strong>{{ project.title }}</strong> -
+                {{ project.status }} -
+                <a href="{% url 'edit_project' project.id %}">Edit</a> |
+                <a href="{% url 'delete_project' project.id %}">Delete</a>
+            </li>
+        {% empty %}
+            <li>No projects yet.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
