@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container text-center py-5">
+    <h1 class="display-4">Welcome to NGO Tracker 🌍</h1>
+    <p class="lead">Track and discover amazing NGOs making a difference</p>
+    <div class="mt-4">
+        <a href="/ngos/" class="btn btn-primary btn-lg me-2">Browse NGOs</a>
+        <a href="/signup/" class="btn btn-outline-primary btn-lg">Join Us</a>
+    </div>
+</div>
+
+<div class="container py-5">
+    <div class="row text-center">
+        <div class="col-md-4 mb-4">
+            <div class="card p-4">
+                <h2 class="text-primary">{{ total_ngos }}</h2>
+                <p class="text-muted">Registered NGOs</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card p-4">
+                <h2 class="text-success">{{ total_projects }}</h2>
+                <p class="text-muted">Active Projects</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card p-4">
+                <h2 class="text-info">{{ total_users }}</h2>
+                <p class="text-muted">Community Members</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
