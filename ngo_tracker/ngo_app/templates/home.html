@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Welcome to NGO Tracker 🌍</h1>
+<p>This is the homepage. You can explore NGOs, view projects, and track social initiatives.</p>
+
+{% if not user.is_authenticated %}
+    <p>Please <a href="{% url 'login' %}">login</a> or <a href="{% url 'signup' %}">sign up</a> to continue.</p>
+{% endif %}
+{% endblock %}

@@ -1,7 +1,10 @@
 from django.contrib import admin
-from django.urls import path, include  # include lets us connect app URLs
+from django.urls import path, include
+from ngo_app import views  # import your app views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),     # default admin page
-    path('', include('ngo_app.urls')),  # this connects your app’s URLs
+    path('admin/', admin.site.urls),
+    path('', include('ngo_app.urls')),  
+    path('users/', include('users.urls')),
+    
 ]
