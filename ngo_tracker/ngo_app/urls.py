@@ -1,6 +1,7 @@
-from django.urls import path
-from . import views
+from django.contrib import admin
+from django.urls import path, include
 
 urlpatterns = [
-    path('', views.home, name='home'),
+    path('admin/', admin.site.urls),                        # Django admin
+    path('ngo_dashboard/', include('ngo_dashboard.urls')),  # NGO dashboard app
 ]
