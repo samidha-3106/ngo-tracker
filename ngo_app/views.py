@@ -1,17 +1,14 @@
-from django.shortcuts import render, get_object_or_404
-from django.db.models import Q
+from django.shortcuts import render
+from django.contrib.auth.models import User
 from ngo_dashboard.models import NGOProfile, Project
 
 def home(request):
-    # Get total counts for display
-    total_ngos = NGOProfile.objects.count()
-    total_projects = Project.objects.count()
-    
     context = {
-        'total_ngos': total_ngos,
-        'total_projects': total_projects
+        'total_ngos': NGOProfile.objects.count(),
+        'total_projects': Project.objects.count(),
+        'total_users': User.objects.count(),
     }
-    return render(request, 'ngo_app/home.html', context)
+    return render(request, 'home.html', context)
 
 def ngo_list(request):
     search_query = request.GET.get('search', '')
