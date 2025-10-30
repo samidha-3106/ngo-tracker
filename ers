@@ -1,0 +1,22 @@
+*   [33m002b030[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Resolved merge conflict in urls.py
+[31m|[m[32m\[m  
+[31m|[m [32m|[m * [33me4bc1fd[m[33m ([m[1;32mmember1-lavanya[m[33m)[m Resolved merge conflicts and updated .gitignore
+[31m|[m [32m|[m[32m/[m[31m|[m 
+[31m|[m [32m|[m[31m/[m  
+[31m|[m[31m/[m[32m|[m   
+* [32m|[m [33m4a7b80c[m Final NGO Tracker project with dashboard and Bootstrap
+* [32m|[m   [33mfd2d7e3[m Merge branch 'main' of https://github.com/Shreya2006-G/ngo-tracker-final
+[35m|[m[36m\[m [32m\[m  
+[35m|[m * [32m|[m [33m7092799[m Initial commit
+[35m|[m  [32m/[m  
+* [32m|[m [33me921809[m Initial commit
+* [32m|[m [33m711ef62[m Completed NGO Tracker project - Shreya Gandewar
+* [32m|[m   [33m870ecca[m Initial commit for NGO Tracker project - Shreya Gandewar work
+[1;31m|[m[1;32m\[m [32m\[m  
+[1;31m|[m * [32m|[m [33m62cb6b1[m Initial commit
+[1;31m|[m  [32m/[m  
+* [32m|[m [33m5957c61[m Initial commit for NGO Tracker project - ShreyaG work
+[1;32m|[m * [33mb7bfff9[m[33m ([m[1;31morigin/member1-lavanya[m[33m)[m added authentication system(signup,login,logout)for NGO Tracker-Member 1 Lavanya
+[1;32m|[m * [33mf4cdbf1[m Added signup and login views in users app
+[1;32m|[m[1;32m/[m  
+* [33m8721b08[m Initial NGO Tracker setup
