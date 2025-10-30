@@ -1,7 +1,10 @@
 from django.contrib import admin
 from django.urls import path, include
+from ngo_app import views  # import your app views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('ngo_dashboard/', include('ngo_dashboard.urls')),  # <-- this line
+    path('', include('ngo_app.urls')),  
+    path('users/', include('users.urls')),
+    path('ngo_dashboard/', include('ngo_dashboard.urls')),  # keep your route too
 ]

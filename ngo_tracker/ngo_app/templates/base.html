@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NGO Tracker</title>
+    <style>
+        nav a { margin: 0 10px; text-decoration: none; }
+        nav span { margin-right: 10px; font-weight: bold; }
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        header, footer { margin-bottom: 20px; }
+        footer { font-size: 0.8em; color: gray; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{% url 'home' %}">Home</a> |
+            {% if user.is_authenticated %}
+                <span>Welcome, {{ user.username }} ({{ user.userprofile.role }})</span>
+                <a href="{% url 'logout' %}">Logout</a>
+            {% else %}
+                <a href="{% url 'login' %}">Login</a> |
+                <a href="{% url 'signup' %}">Sign Up</a>
+            {% endif %}
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        &copy; 2025 NGO Tracker
+    </footer>
+</body>
+</html>
